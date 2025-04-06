@@ -1,0 +1,25 @@
+# Each line contains the data of a given bicluster.
+# Data is separated by tab characters.
+# Data is organized as follows:
+#    BIC [bic_ID] [number_of_rows] [row_index_1] [row_index_2] ... [row_index_n] [number_of_cols] [col_index_1] [col_index_2] ... [col_index_m] [pattern_length] [pattern_char_1] [pattern_char_2] ... [pattern_char_p]
+# where:
+# [bic_ID] is the bicluster id
+# [number_of_rows] is the number of rows indexes
+# [row_index_i] is the index of the ith row
+# [number_of_cols] is the number of columns indexes
+# [col_index_i] is the index of the ith column
+# [pattern_length] the length of the pattern (can be different from the number of columns, if using discretizations that measure variations between time points)
+# [pattern_char_i] is character in the ith column of the pattern
+
+BIC	9	14	16	23	29	30	31	38	39	43	44	51	52	53	55	57	5	1	2	3	4	5	5	U	U	D	N	D
+BIC	20	12	5	17	18	19	34	37	40	41	46	47	49	58	5	1	2	3	4	5	5	U	N	D	N	N
+BIC	7	17	16	23	29	30	31	38	39	43	44	45	51	52	53	54	55	56	57	4	1	2	3	4	4	U	U	D	N
+BIC	38	34	5	7	16	17	18	19	21	22	23	29	30	31	32	34	37	38	39	40	41	43	44	45	46	47	49	50	51	52	53	54	55	56	57	58	2	3	4	2	D	N
+BIC	13	28	2	3	4	5	7	8	9	10	17	18	19	21	22	24	25	26	27	34	37	40	41	46	47	48	49	50	58	60	2	1	2	2	U	N
+BIC	4	26	11	12	13	14	15	16	20	23	28	29	30	31	38	39	42	43	44	45	51	52	53	54	55	56	57	59	2	1	2	2	U	U
+BIC	6	24	12	13	14	15	16	20	23	29	30	31	38	39	42	43	44	45	51	52	53	54	55	56	57	59	3	1	2	3	3	U	U	D
+BIC	17	23	5	7	8	9	17	18	19	21	22	24	25	27	34	37	40	41	46	47	48	49	50	58	60	3	1	2	3	3	U	N	D
+BIC	40	18	7	16	21	22	23	29	30	31	38	39	43	44	50	51	52	53	55	57	3	3	4	5	3	D	N	D
+BIC	19	16	5	7	17	18	19	21	22	34	37	40	41	46	47	49	50	58	4	1	2	3	4	4	U	N	D	N
+BIC	28	17	5	6	17	18	19	32	34	37	40	41	45	46	47	49	54	56	58	2	4	5	2	N	N
+BIC	39	16	5	17	18	19	32	34	37	40	41	45	46	47	49	54	56	58	3	3	4	5	3	D	N	N

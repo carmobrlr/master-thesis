@@ -1,0 +1,44 @@
+# Each line contains the data of a given bicluster.
+# Data is separated by tab characters.
+# Data is organized as follows:
+#    BIC [bic_ID] [number_of_rows] [row_index_1] [row_index_2] ... [row_index_n] [number_of_cols] [col_index_1] [col_index_2] ... [col_index_m] [pattern_length] [pattern_char_1] [pattern_char_2] ... [pattern_char_p]
+# where:
+# [bic_ID] is the bicluster id
+# [number_of_rows] is the number of rows indexes
+# [row_index_i] is the index of the ith row
+# [number_of_cols] is the number of columns indexes
+# [col_index_i] is the index of the ith column
+# [pattern_length] the length of the pattern (can be different from the number of columns, if using discretizations that measure variations between time points)
+# [pattern_char_i] is character in the ith column of the pattern
+
+BIC	12	4	36	47	48	49	4	3	4	5	6	4	U	U	D	N
+BIC	33	2	52	59	6	1	2	3	4	5	6	6	N	D	D	U	N	U
+BIC	63	2	25	38	6	1	2	3	4	5	6	6	D	D	U	N	N	U
+BIC	61	2	17	19	6	1	2	3	4	5	6	6	D	D	U	U	N	D
+BIC	60	3	18	32	54	6	1	2	3	4	5	6	6	D	D	U	U	N	N
+BIC	56	44	1	2	3	5	6	9	11	12	13	14	15	16	17	18	19	20	21	23	25	26	28	30	32	33	38	39	41	42	43	44	45	46	47	48	49	50	51	53	54	55	56	57	58	60	2	1	2	2	D	D
+BIC	39	32	1	2	3	9	10	11	12	13	14	15	16	20	21	23	26	28	30	31	33	39	41	42	44	45	46	50	51	53	56	57	58	60	2	2	3	2	D	N
+BIC	6	19	8	10	16	17	18	19	27	32	35	40	43	44	45	46	50	52	54	55	59	2	4	5	2	U	N
+BIC	22	19	9	10	11	12	13	14	15	16	20	28	33	37	39	42	44	45	46	50	53	2	3	4	2	N	U
+BIC	3	17	5	6	7	9	11	12	13	14	15	20	28	33	34	37	39	42	53	2	4	5	2	U	U
+BIC	2	16	5	7	9	11	12	13	14	15	21	22	23	28	29	31	39	53	2	5	6	2	U	N
+BIC	1	15	1	2	3	6	30	33	34	37	41	42	51	56	57	58	60	2	5	6	2	U	U
+BIC	18	15	1	2	3	21	22	23	29	30	31	41	51	56	57	58	60	2	4	5	2	N	U
+BIC	9	14	17	18	19	27	32	34	35	36	40	47	48	49	54	55	2	3	4	2	U	U
+BIC	34	13	17	18	19	25	27	29	32	38	47	48	49	54	55	2	2	3	2	D	U
+BIC	15	10	16	25	26	38	43	46	50	52	55	59	2	5	6	2	N	U
+BIC	16	10	4	8	10	18	32	35	40	44	45	54	2	5	6	2	N	N
+BIC	29	7	7	8	10	27	31	52	59	2	1	2	2	N	D
+BIC	46	7	5	6	7	8	43	52	59	3	2	3	4	3	D	D	U
+BIC	13	4	24	25	29	38	2	3	4	2	U	N
+BIC	17	4	17	19	24	27	2	5	6	2	N	D
+BIC	20	4	24	25	26	38	2	4	5	2	N	N
+BIC	53	4	22	34	37	40	2	1	2	2	D	N
+BIC	48	2	5	7	5	2	3	4	5	6	5	D	D	U	U	N
+BIC	28	3	24	34	40	2	2	3	2	N	U
+BIC	51	3	4	35	36	3	1	2	3	3	D	U	U
+BIC	24	3	33	37	42	4	3	4	5	6	4	N	U	U	U
+BIC	77	2	5	6	5	1	2	3	4	5	5	D	D	D	U	U
+BIC	41	6	10	16	44	45	46	50	4	2	3	4	5	4	D	N	U	N
+BIC	27	4	21	22	23	31	4	3	4	5	6	4	N	N	U	N
+BIC	30	2	10	31	3	1	2	3	3	N	D	N

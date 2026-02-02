@@ -1,15 +1,48 @@
-# Master Thesis
+# Master Thesis  
+## Predicting Cardiomyocyte Content Using Data-Driven Approaches
 
-## Predicting cardiomyocytes content using data-driven approaches
+This repository contains the code and results developed for my Master's thesis, focused on predicting cardiomyocyte (CM) content during stem cell differentiation using data-driven methods.
 
-The repository contains all the code developed in this thesis and results obtained.
+---
 
-Cardiovascular diseases remain a leading cause of death worldwide, with cardiomyocyte (CM) loss as a major contributing factor. CMs are a promising tool for drug validation, autologous cell therapy, and cardiac disease modeling in vitro. They can be derived from human induced pluripotent stem cells through differentiation in stirred tank bioreactors, but this process remains highly variable.
+## Project Motivation
+Cardiovascular diseases are a leading cause of death worldwide, with cardiomyocyte loss playing a major role. Cardiomyocytes derived from human induced pluripotent stem cells are a promising solution for drug testing and disease modelling. However, the differentiation process in stirred-tank bioreactors is highly variable.
 
-Machine learning (ML) and biclustering algorithms can help optimize this process by identifying key bioprocess parameters influencing differentiation outcomes. This thesis applies biclustering to uncover significant data patterns and determine the most influential factors. Additionally, it compares supervised ML models to predict CM content using bioprocess data.
+This project explores how **biclustering and machine learning** can be used to identify key bioprocess parameters and improve the prediction of cardiomyocyte content.
 
-Biclustering analysis identifies cell density, dissolved oxygen concentration, and average pH gradient as key variables, with cell density increasing and oxygen levels decreasing from day 1. Biclustering reduces the original feature set by 75\%, selecting 25 features.
+---
 
-Five ML models—random forest, XGBoost, decision tree, support vector machine, and Gaussian Naive Bayes—are evaluated using feature sets obtained from biclustering and correlation coefficients. The best predictive performances are achieved by the decision tree with the ANOVA-derived feature set, the random forest with the biclustering feature set, and XGBoost with the ANOVA set. The decision tree with the ANOVA feature set achieves 93.3\% accuracy and 91.1\% precision.
+## Methodology
+The project follows a structured data science pipeline:
 
-This repository contains the initial data explorations, all the patterns obtained using the CCC-Biclustering algorithm and their evaluation using DISA tool, and the application of several ML models to the data. The models are optimized using a process of hyperparameter optimization and, in particular cases, resampling methods.
+1. Exploratory data analysis and correlation assessment  
+2. Pattern discovery using **CCC-Biclustering (BiGGEstTS)**  
+3. Pattern evaluation using the **DISA** tool  
+4. Feature selection based on significant biclusters  
+5. Supervised machine learning modelling and evaluation  
+
+---
+
+## Key Results
+- Biclustering identified **cell density, dissolved oxygen concentration and pH gradient** as key variables influencing differentiation.
+- Feature space was reduced by **~75%**, selecting 25 relevant features.
+- Five ML models were evaluated:  
+  *Decision Tree, Random Forest, XGBoost, SVM and Gaussian Naive Bayes.*
+- Best performance:
+  - **Decision Tree + ANOVA feature set**:  
+    - Accuracy: **93.3%**  
+    - Precision: **91.1%**
+  - Random Forest and XGBoost also achieved strong results with selected feature sets.
+
+---
+
+## Repository Structure
+```text
+code/
+├── 01_exploration            # Initial data analysis and visualizations
+├── 02_biclustering           # Pattern discovery with BiGGEstTS
+├── 03_pattern_evaluation     # DISA-based pattern evaluation
+├── 04_feature_engineering    # Feature selection and comparison
+├── 05_modeling               # Machine learning models and evaluation
+└── datasets                  # Raw and processed datasets
+
